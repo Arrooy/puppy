@@ -27,7 +27,7 @@
         <!--Demo View Controller-->
         <scene sceneID="LYF-uA-IrC">
             <objects>
-                <viewController id="rbu-3f-TgW" sceneMemberID="viewController">
+                <viewController id="rbu-3f-TgW" customClass="ViewController" customModule="puppygram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="juY-CE-ZyU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,6 +70,9 @@
                                     <segment title="Color negre"/>
                                     <segment title="Color blau"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentedControlChanged:" destination="rbu-3f-TgW" eventType="valueChanged" id="1Jd-Ql-h8T"/>
+                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input de dades" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TyK-Ph-B6L">
                                 <rect key="frame" x="20" y="270" width="184" height="34"/>
@@ -96,12 +99,18 @@
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="j0k-wm-wjO">
                                 <rect key="frame" x="160" y="432" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stepperValChanged:" destination="rbu-3f-TgW" eventType="valueChanged" id="6fv-Rc-8oJ"/>
+                                </connections>
                             </stepper>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hfv-u3-18k"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Demo View Controller" id="Nzh-lf-2dQ"/>
+                    <connections>
+                        <outlet property="num" destination="aV4-sr-Nrv" id="33f-WT-se8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ima-QR-5Zg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
