@@ -13,7 +13,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     @IBOutlet var progressBar: UIProgressView!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet var textInput: UITextField!
+    @IBOutlet var textInput: UITextField!  
+    
+    @IBOutlet var stepper: UIStepper!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,10 +25,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func segmentedControlChanged(_ sender: UISegmentedControl) {
-        num.textColor = sender.isSelected ? UIColor.black : UIColor.blue
+        num.textColor = sender.selectedSegmentIndex == 0 ? UIColor.black : UIColor.blue
     }
-    
-    //num.text = sender.text!.rangeOfCharacter(from: NSCharacterSet.decimalDigits) != nil ? sender.text : "0"
     
     @IBAction func sliderChanged(_ sender: UISlider) {
         num.font = num.font.withSize(CGFloat(sender.value))
@@ -46,17 +47,26 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     
     
-    //Text field delegate
-    func textFieldDidBeginEditing(textField: UITextField!) {    //delegate method
-
-    }
-
-    func textFieldShouldEndEditing(textField: UITextField!) -> Bool {  //delegate method
-        return false
-    }
-
-    func textFieldShouldReturn(textField: UITextField!) -> Bool {   //delegate method
-      textField.resignFirstResponder()
-
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        let onlyNumbers = textField.text!.rangeOfCharacter(from: NSCharacterSet.decimalDigits.inverted) == nil
+        if onlyNumbers && Double(textField.text!)! >= 0 && Double(textField.text!)! <= 100 {
+            num.text = String(Int(textField.text!)!)
+            stepper.value = Double(textField.text!)!
+        }else{
+            showAlert(title: "Impossible posar aquest valor!", message: "Nomes es pot posar valors de 0 - 100)")
+        }
+        textField.text = ""
+        
         return true
-    }}
+    }
+    
+    func showAlert(title:String, message:String){
+        let alert = UIAlertController(title: title, message:message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Acceptar", style: .cancel, handler: nil))
+        present(alert,animated:true,completion: nil)
+        
+    }
+}
+
+

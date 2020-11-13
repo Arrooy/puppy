@@ -80,7 +80,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="tel"/>
                             </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="14" minValue="14" maxValue="32" translatesAutoresizingMaskIntoConstraints="NO" id="6cx-ar-wDd">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="17" minValue="17" maxValue="52" translatesAutoresizingMaskIntoConstraints="NO" id="6cx-ar-wDd">
                                 <rect key="frame" x="212" y="270" width="184" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -118,6 +118,7 @@
                         <outlet property="activityIndicator" destination="Sb7-Kf-d0m" id="Uga-w6-Yhq"/>
                         <outlet property="num" destination="aV4-sr-Nrv" id="33f-WT-se8"/>
                         <outlet property="progressBar" destination="l4I-Zc-d0U" id="2Sy-R0-VnK"/>
+                        <outlet property="stepper" destination="j0k-wm-wjO" id="cZT-7u-iEz"/>
                         <outlet property="textInput" destination="TyK-Ph-B6L" id="zWr-wY-BIw"/>
                     </connections>
                 </viewController>
