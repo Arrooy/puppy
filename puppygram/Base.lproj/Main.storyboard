@@ -24,21 +24,78 @@
             </objects>
             <point key="canvasLocation" x="348" y="-334"/>
         </scene>
-        <!--Item 1-->
+        <!--Demo View Controller-->
         <scene sceneID="LYF-uA-IrC">
             <objects>
                 <viewController id="rbu-3f-TgW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="juY-CE-ZyU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bD1-RN-jcV">
+                                <rect key="frame" x="20" y="585" width="374" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="PUSH d'una nova pantalla">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PZo-in-VRF" kind="show" id="ThA-OW-jcv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toV-hc-oNt">
+                                <rect key="frame" x="20" y="653" width="374" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="PRESENT d'una nova pantalla">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Nxx-gd-Ujx" kind="presentation" id="oQB-bm-Ggd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hfv-u3-18k"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="der-3H-zad"/>
+                    <navigationItem key="navigationItem" title="Demo View Controller" id="Nzh-lf-2dQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ima-QR-5Zg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="348" y="-940"/>
+            <point key="canvasLocation" x="1234.7826086956522" y="-1208.0357142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vLN-uB-Vm7">
+            <objects>
+                <viewController id="PZo-in-VRF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DxN-t2-x06">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cZ0-I4-9wC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UhW-vq-rF6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hJX-RU-jkQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2239.130434782609" y="-1533.4821428571429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FWK-AH-zyc">
+            <objects>
+                <viewController id="Nxx-gd-Ujx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NAY-L6-nNb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="azi-V2-akN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qDv-bL-OxW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2255.072463768116" y="-882.58928571428567"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MPd-VY-Yjs">
@@ -50,7 +107,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="rbu-3f-TgW" kind="relationship" relationship="viewControllers" id="65V-kO-FFE"/>
+                        <segue destination="fnm-7p-FHp" kind="relationship" relationship="viewControllers" id="65V-kO-FFE"/>
                         <segue destination="Efr-dJ-ewE" kind="relationship" relationship="viewControllers" id="h6c-5n-DLR"/>
                     </connections>
                 </tabBarController>
@@ -58,10 +115,38 @@
             </objects>
             <point key="canvasLocation" x="-543" y="-638"/>
         </scene>
+        <!--Item 1-->
+        <scene sceneID="ndb-Tc-aZf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fnm-7p-FHp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 1" id="der-3H-zad"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X9c-1n-kXh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rbu-3f-TgW" kind="relationship" relationship="rootViewController" id="ewc-qz-tiB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AZH-3N-SDV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324.63768115942031" y="-1208.0357142857142"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
