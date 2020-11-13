@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="IUA-MG-N6h">
             <objects>
                 <viewController id="Efr-dJ-ewE" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="wR9-xk-Y6B"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="RXJ-0o-Spc"/>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" selectedImage="person.fill" id="RXJ-0o-Spc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5TD-aW-NCd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,11 +175,11 @@
             </objects>
             <point key="canvasLocation" x="-543" y="-638"/>
         </scene>
-        <!--Item 1-->
+        <!--Navigation Controller-->
         <scene sceneID="ndb-Tc-aZf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fnm-7p-FHp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="der-3H-zad"/>
+                    <tabBarItem key="tabBarItem" title="" image="moon" catalog="system" selectedImage="moon.fill" id="der-3H-zad"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X9c-1n-kXh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -199,6 +199,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="moon" catalog="system" width="128" height="121"/>
+        <image name="moon.fill" catalog="system" width="128" height="121"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
