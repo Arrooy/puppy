@@ -13,6 +13,7 @@
 		EFD75FEB255F028400986FC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD75FEA255F028400986FC3 /* Assets.xcassets */; };
 		EFD75FEE255F028400986FC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFD75FEC255F028400986FC3 /* LaunchScreen.storyboard */; };
 		EFD75FF7255F0CDE00986FC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD75FF6255F0CDE00986FC3 /* ViewController.swift */; };
+		EFD76009255F1FDE00986FC3 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFD76001255F1EBB00986FC3 /* Billabong.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EFD75FED255F028400986FC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFD75FEF255F028400986FC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFD75FF6255F0CDE00986FC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFD76001255F1EBB00986FC3 /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Billabong.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		EFD75FE0255F028300986FC3 /* puppygram */ = {
 			isa = PBXGroup;
 			children = (
+				EFD76001255F1EBB00986FC3 /* Billabong.ttf */,
 				EFD75FE1255F028300986FC3 /* AppDelegate.swift */,
 				EFD75FE3255F028300986FC3 /* SceneDelegate.swift */,
 				EFD75FE7255F028300986FC3 /* Main.storyboard */,
@@ -127,6 +130,7 @@
 				EFD75FEE255F028400986FC3 /* LaunchScreen.storyboard in Resources */,
 				EFD75FEB255F028400986FC3 /* Assets.xcassets in Resources */,
 				EFD75FE9255F028300986FC3 /* Main.storyboard in Resources */,
+				EFD76009255F1FDE00986FC3 /* Billabong.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
