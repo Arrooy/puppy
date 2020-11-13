@@ -78,13 +78,13 @@
                                 <rect key="frame" x="20" y="270" width="184" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="tel"/>
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="14" minValue="14" maxValue="32" translatesAutoresizingMaskIntoConstraints="NO" id="6cx-ar-wDd">
                                 <rect key="frame" x="212" y="270" width="184" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="sliderChanged:" destination="rbu-3f-TgW" eventType="valueChanged" id="1kr-83-Ycy"/>
+                                    <action selector="sliderChanged:" destination="rbu-3f-TgW" eventType="valueChanged" id="MC0-rA-5D7"/>
                                 </connections>
                             </slider>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Sb7-Kf-d0m">
@@ -95,7 +95,7 @@
                                 <rect key="frame" x="78" y="372" width="261" height="4"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SQF-Uf-VsJ">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SQF-Uf-VsJ">
                                 <rect key="frame" x="347" y="359" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -118,6 +118,7 @@
                         <outlet property="activityIndicator" destination="Sb7-Kf-d0m" id="Uga-w6-Yhq"/>
                         <outlet property="num" destination="aV4-sr-Nrv" id="33f-WT-se8"/>
                         <outlet property="progressBar" destination="l4I-Zc-d0U" id="2Sy-R0-VnK"/>
+                        <outlet property="textInput" destination="TyK-Ph-B6L" id="zWr-wY-BIw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ima-QR-5Zg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

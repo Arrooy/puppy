@@ -7,16 +7,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
 
-    @IBOutlet weak var num: UILabel!
+    @IBOutlet var num: UILabel!
     
-    @IBOutlet weak var progressBar: UIProgressView!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet var progressBar: UIProgressView!
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet var textInput: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        textInput.delegate = self;
         // Do any additional setup after loading the view.
     }
     
@@ -24,9 +25,12 @@ class ViewController: UIViewController {
         num.textColor = sender.isSelected ? UIColor.black : UIColor.blue
     }
     
+    //num.text = sender.text!.rangeOfCharacter(from: NSCharacterSet.decimalDigits) != nil ? sender.text : "0"
+    
     @IBAction func sliderChanged(_ sender: UISlider) {
-        num.font.withSize(CGFloat(sender.value))
+        num.font = num.font.withSize(CGFloat(sender.value))
     }
+    
     @IBAction func switchChanged(_ sender: UISwitch) {
         if sender.isOn {
             activityIndicator.startAnimating()
@@ -41,14 +45,18 @@ class ViewController: UIViewController {
         num.text = String(Int(sender.value))
     }
     
-    /*
-    // MARK: - Navigation
+    
+    //Text field delegate
+    func textFieldDidBeginEditing(textField: UITextField!) {    //delegate method
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
 
-}
+    func textFieldShouldEndEditing(textField: UITextField!) -> Bool {  //delegate method
+        return false
+    }
+
+    func textFieldShouldReturn(textField: UITextField!) -> Bool {   //delegate method
+      textField.resignFirstResponder()
+
+        return true
+    }}
