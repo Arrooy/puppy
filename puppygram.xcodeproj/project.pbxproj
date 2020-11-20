@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF0C1F9825682E6200F842C1 /* PUSHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0C1F9725682E6200F842C1 /* PUSHViewController.swift */; };
+		EF0C1F9B256834B200F842C1 /* MODALViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0C1F9A256834B200F842C1 /* MODALViewController.swift */; };
+		EF0C1F9E25683BE900F842C1 /* PuppygramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0C1F9D25683BE900F842C1 /* PuppygramViewController.swift */; };
+		EF0C1FA0256847DE00F842C1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFD75FEF255F028400986FC3 /* Info.plist */; };
+		EF0C1FA425684BA000F842C1 /* Unknown-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EF0C1FA225684BA000F842C1 /* Unknown-1.jpeg */; };
+		EF0C1FA525684BA000F842C1 /* Unknown.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EF0C1FA325684BA000F842C1 /* Unknown.jpeg */; };
+		EF0C1FAC25684E8800F842C1 /* comment.svg in Resources */ = {isa = PBXBuildFile; fileRef = EF0C1FAA25684E8800F842C1 /* comment.svg */; };
+		EF0C1FAD25684E8800F842C1 /* heart.svg in Resources */ = {isa = PBXBuildFile; fileRef = EF0C1FAB25684E8800F842C1 /* heart.svg */; };
 		EFD75FE2255F028300986FC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD75FE1255F028300986FC3 /* AppDelegate.swift */; };
 		EFD75FE4255F028300986FC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD75FE3255F028300986FC3 /* SceneDelegate.swift */; };
 		EFD75FE9255F028300986FC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFD75FE7255F028300986FC3 /* Main.storyboard */; };
@@ -17,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF0C1F9725682E6200F842C1 /* PUSHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PUSHViewController.swift; sourceTree = "<group>"; };
+		EF0C1F9A256834B200F842C1 /* MODALViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MODALViewController.swift; sourceTree = "<group>"; };
+		EF0C1F9D25683BE900F842C1 /* PuppygramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppygramViewController.swift; sourceTree = "<group>"; };
+		EF0C1FA225684BA000F842C1 /* Unknown-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Unknown-1.jpeg"; path = "../../../Desktop/Unknown-1.jpeg"; sourceTree = "<group>"; };
+		EF0C1FA325684BA000F842C1 /* Unknown.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Unknown.jpeg; path = ../../../Desktop/Unknown.jpeg; sourceTree = "<group>"; };
+		EF0C1FAA25684E8800F842C1 /* comment.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = comment.svg; sourceTree = "<group>"; };
+		EF0C1FAB25684E8800F842C1 /* heart.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = heart.svg; sourceTree = "<group>"; };
 		EFD75FDE255F028300986FC3 /* puppygram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = puppygram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD75FE1255F028300986FC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFD75FE3255F028300986FC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,13 +74,20 @@
 			isa = PBXGroup;
 			children = (
 				EFD76001255F1EBB00986FC3 /* Billabong.ttf */,
+				EF0C1F9A256834B200F842C1 /* MODALViewController.swift */,
 				EFD75FE1255F028300986FC3 /* AppDelegate.swift */,
+				EF0C1F9725682E6200F842C1 /* PUSHViewController.swift */,
 				EFD75FE3255F028300986FC3 /* SceneDelegate.swift */,
 				EFD75FE7255F028300986FC3 /* Main.storyboard */,
 				EFD75FEA255F028400986FC3 /* Assets.xcassets */,
 				EFD75FEC255F028400986FC3 /* LaunchScreen.storyboard */,
 				EFD75FEF255F028400986FC3 /* Info.plist */,
+				EF0C1FAA25684E8800F842C1 /* comment.svg */,
+				EF0C1FAB25684E8800F842C1 /* heart.svg */,
+				EF0C1FA225684BA000F842C1 /* Unknown-1.jpeg */,
+				EF0C1FA325684BA000F842C1 /* Unknown.jpeg */,
 				EFD75FF6255F0CDE00986FC3 /* ViewController.swift */,
+				EF0C1F9D25683BE900F842C1 /* PuppygramViewController.swift */,
 			);
 			path = puppygram;
 			sourceTree = "<group>";
@@ -128,8 +150,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFD75FEE255F028400986FC3 /* LaunchScreen.storyboard in Resources */,
+				EF0C1FAD25684E8800F842C1 /* heart.svg in Resources */,
 				EFD75FEB255F028400986FC3 /* Assets.xcassets in Resources */,
+				EF0C1FA425684BA000F842C1 /* Unknown-1.jpeg in Resources */,
 				EFD75FE9255F028300986FC3 /* Main.storyboard in Resources */,
+				EF0C1FAC25684E8800F842C1 /* comment.svg in Resources */,
+				EF0C1FA0256847DE00F842C1 /* Info.plist in Resources */,
+				EF0C1FA525684BA000F842C1 /* Unknown.jpeg in Resources */,
 				EFD76009255F1FDE00986FC3 /* Billabong.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,7 +170,10 @@
 			files = (
 				EFD75FF7255F0CDE00986FC3 /* ViewController.swift in Sources */,
 				EFD75FE2255F028300986FC3 /* AppDelegate.swift in Sources */,
+				EF0C1F9E25683BE900F842C1 /* PuppygramViewController.swift in Sources */,
+				EF0C1F9825682E6200F842C1 /* PUSHViewController.swift in Sources */,
 				EFD75FE4255F028300986FC3 /* SceneDelegate.swift in Sources */,
+				EF0C1F9B256834B200F842C1 /* MODALViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
