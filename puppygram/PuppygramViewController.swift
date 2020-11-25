@@ -46,8 +46,6 @@ class PuppygramViewController: UIViewController {
     @IBAction func commentButton(_ sender: Any) {
     }
     
-    @IBAction func commentButton(_ sender: Any) {
-    }
     /*
     // MARK: - Navigation
 
